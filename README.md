@@ -14,18 +14,19 @@ python extract_embeddings.py
 Requirements:
 
 Set the train_images_directory variable to the directory containing your training images.
-2. recognize_video.py
+
+### 2. recognize_video.py
 Performs real-time face recognition using a webcam and plays an alert sound if a known face is detected.
 
 Usage:
 
-Copy code
 python recognize_video.py
 Requirements:
 
 Set the alert_sound_path variable to the path of your custom alert sound file.
 Ensure the known_faces.pkl file is present in the same directory.
-3. train_model.py
+
+### 3. train_model.py
 Evaluates the accuracy of the face recognition model using a set of test images.
 
 Usage:
@@ -46,7 +47,7 @@ pip install opencv-python face_recognition scikit-learn pygame
 Prepare Directories:
 
 Create directories for training and test images.
-Place your training images in the directory specified by train_images_directory in extract_embeddings.py.
+* Place your training images in the directory specified by train_images_directory in extract_embeddings.py.
 Place your test images in the directory specified by test_images_directory in train_model.py.
 Ensure the alert sound file is in the correct path specified in recognize_video.py.
 Run the Scripts:
